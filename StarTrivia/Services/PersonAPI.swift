@@ -37,6 +37,7 @@ class PersonAPI {
 ////        }
 //        task.resume()
     
+    
 //    }
     
     func getRandomPersonAlamofire() {
