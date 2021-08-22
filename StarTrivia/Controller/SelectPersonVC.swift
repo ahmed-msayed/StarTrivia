@@ -13,8 +13,8 @@ class SelectPersonVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        personAPI.getRandomPersonUrlSession()
-        personAPI.getRandomPersonAlamofire()
+        personAPI.getRandomPersonUrlSession()
+//        personAPI.getRandomPersonAlamofire()
     }
 
 
