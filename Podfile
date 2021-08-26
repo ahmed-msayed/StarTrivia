@@ -7,6 +7,6 @@ target 'StarTrivia' do
 
   # Pods for StarTrivia
   
-pod 'Alamofire', '~> 5.2'
-
+pod 'Alamofire'
+pod 'SwiftyJSON'
 end

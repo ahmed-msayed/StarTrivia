@@ -10,15 +10,16 @@ import Alamofire
 
 class PersonAPI {
     
-    func getRandomPersonUrlSession() {
+    func getRandomPersonUrlSession(id: Int, completion: @escaping PersonResponseCompletion) {
         
-        guard let url = URL(string: Constants.PERSON_URL) else { return }
+        guard let url = URL(string: "\(Constants.PERSON_URL)\(id)") else { return }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
             //make sure error = nil and continue, else debug and won't continue
             guard error == nil else {
                 debugPrint(error.debugDescription)
+                completion(nil)
                 return
             }
             
@@ -29,13 +30,15 @@ class PersonAPI {
                 let jsonAny = try JSONSerialization.jsonObject(with: data, options: [])
                 guard let json = jsonAny as? [String: Any] else { return }
                 let person = self.parsePersonManual(json: json)
-                print(person.name)
-                print(person.birthYear) //etc.
+                
+                DispatchQueue.main.async {  //to get back to main thread to deal with UI items
+                    completion(person)
+                }
+                
             } catch {
                 debugPrint(error.localizedDescription)
                 return
             }
-            
         }
         task.resume()
     }

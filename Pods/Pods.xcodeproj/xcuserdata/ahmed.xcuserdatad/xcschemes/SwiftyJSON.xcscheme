@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "137E872DDB7B28E3895A1AD27379BA60"
-               BuildableName = "Pods_StarTrivia.framework"
-               BlueprintName = "Pods-StarTrivia"
+               BlueprintIdentifier = "D118A6A04828FD3CDA8640CD2B6796D2"
+               BuildableName = "SwiftyJSON.framework"
+               BlueprintName = "SwiftyJSON"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

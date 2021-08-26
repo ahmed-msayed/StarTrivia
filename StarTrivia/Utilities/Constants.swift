@@ -11,7 +11,8 @@ class Constants {
     static let BLACK_BG = UIColor.black.withAlphaComponent(0.6).cgColor
 
     static let URL_BASE = "https://swapi.dev/api/"
-    static let PERSON_URL = URL_BASE + "people/1"
+    static let PERSON_URL = URL_BASE + "people/"
+    
 }
 
-
+typealias PersonResponseCompletion = (Person?) -> Void
