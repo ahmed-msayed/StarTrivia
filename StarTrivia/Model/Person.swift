@@ -15,21 +15,24 @@ struct Person: Codable {
     let birthYear: String
     let gender: String
     let homeworld: String
-    let filmss: [String]
+    let films: [String]
     let vehicles: [String]
     let starships: [String]
+    
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case height
+        case mass
+        case hairColor = "hair_color"
+        case birthYear = "birth_year"
+        case gender
+        case homeworld
+        case films
+        case vehicles
+        case starships
+    }
 }
 
-// Not necessary as it is allready matching in here
-//enum CodingKeys: String, CodingKey {
-//    case name
-//    case height
-//    case mass
-//    case hairColor = "hair_color"
-//    case birthYear = "birth_year"
-//    case gender
-//    case homeworld
-//    case films
-//    case vehicles
-//    case starships
-//}
+
+

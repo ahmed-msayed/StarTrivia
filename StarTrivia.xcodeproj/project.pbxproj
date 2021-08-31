@@ -22,6 +22,11 @@
 		E28E2EED26CFD547006ADD0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E2EEC26CFD547006ADD0D /* Constants.swift */; };
 		E28E2EEF26CFD56E006ADD0D /* BlackBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E2EEE26CFD56E006ADD0D /* BlackBgView.swift */; };
 		E28E2EF226CFEEB7006ADD0D /* PersonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E2EF126CFEEB7006ADD0D /* PersonAPI.swift */; };
+		E2C0FFE526DC27E600388179 /* FadeEnabledBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C0FFE426DC27E600388179 /* FadeEnabledBtn.swift */; };
+		E2C0FFE726DC31BA00388179 /* HomeworldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C0FFE626DC31BA00388179 /* HomeworldVC.swift */; };
+		E2C0FFE926DC353500388179 /* StarshipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C0FFE826DC353500388179 /* StarshipsVC.swift */; };
+		E2C0FFEB26DC356200388179 /* VehiclesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C0FFEA26DC356200388179 /* VehiclesVC.swift */; };
+		E2C0FFED26DC357400388179 /* FilmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C0FFEC26DC357400388179 /* FilmsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,11 @@
 		E28E2EEC26CFD547006ADD0D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E28E2EEE26CFD56E006ADD0D /* BlackBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBgView.swift; sourceTree = "<group>"; };
 		E28E2EF126CFEEB7006ADD0D /* PersonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAPI.swift; sourceTree = "<group>"; };
+		E2C0FFE426DC27E600388179 /* FadeEnabledBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeEnabledBtn.swift; sourceTree = "<group>"; };
+		E2C0FFE626DC31BA00388179 /* HomeworldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldVC.swift; sourceTree = "<group>"; };
+		E2C0FFE826DC353500388179 /* StarshipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsVC.swift; sourceTree = "<group>"; };
+		E2C0FFEA26DC356200388179 /* VehiclesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesVC.swift; sourceTree = "<group>"; };
+		E2C0FFEC26DC357400388179 /* FilmsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				E28E2EEE26CFD56E006ADD0D /* BlackBgView.swift */,
+				E2C0FFE426DC27E600388179 /* FadeEnabledBtn.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,6 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				E2019FC826CF10250002E93C /* SelectPersonVC.swift */,
+				E2C0FFE626DC31BA00388179 /* HomeworldVC.swift */,
+				E2C0FFEA26DC356200388179 /* VehiclesVC.swift */,
+				E2C0FFE826DC353500388179 /* StarshipsVC.swift */,
+				E2C0FFEC26DC357400388179 /* FilmsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,14 +311,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C0FFED26DC357400388179 /* FilmsVC.swift in Sources */,
 				E28E2EEF26CFD56E006ADD0D /* BlackBgView.swift in Sources */,
 				E2019FC926CF10250002E93C /* SelectPersonVC.swift in Sources */,
 				E2019FC526CF10250002E93C /* AppDelegate.swift in Sources */,
 				E2019FC726CF10250002E93C /* SceneDelegate.swift in Sources */,
+				E2C0FFE726DC31BA00388179 /* HomeworldVC.swift in Sources */,
 				E26FFF5A26D0688400D3EA2C /* Person.swift in Sources */,
+				E2C0FFE926DC353500388179 /* StarshipsVC.swift in Sources */,
 				E28E2EED26CFD547006ADD0D /* Constants.swift in Sources */,
 				E2129F5726D18EC100EED6CF /* CodableExt.swift in Sources */,
 				E28E2EF226CFEEB7006ADD0D /* PersonAPI.swift in Sources */,
+				E2C0FFE526DC27E600388179 /* FadeEnabledBtn.swift in Sources */,
+				E2C0FFEB26DC356200388179 /* VehiclesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
