@@ -16,3 +16,4 @@ class Constants {
 }
 
 typealias PersonResponseCompletion = (Person?) -> Void
+typealias HomeworldesponseCompletion = (Homeworld?) -> Void

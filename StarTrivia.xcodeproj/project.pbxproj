@@ -18,6 +18,8 @@
 		E2019FDF26CF15780002E93C /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2019FDC26CF15780002E93C /* Starjedi.ttf */; };
 		E2019FE026CF15780002E93C /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2019FDD26CF15780002E93C /* Starjout.ttf */; };
 		E2129F5726D18EC100EED6CF /* CodableExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2129F5626D18EC100EED6CF /* CodableExt.swift */; };
+		E25A02E326DFC78B00A6F4BD /* Homeworld.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25A02E226DFC78B00A6F4BD /* Homeworld.swift */; };
+		E25A02E526DFC89A00A6F4BD /* HomeworldAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25A02E426DFC89A00A6F4BD /* HomeworldAPI.swift */; };
 		E26FFF5A26D0688400D3EA2C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26FFF5926D0688400D3EA2C /* Person.swift */; };
 		E28E2EED26CFD547006ADD0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E2EEC26CFD547006ADD0D /* Constants.swift */; };
 		E28E2EEF26CFD56E006ADD0D /* BlackBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28E2EEE26CFD56E006ADD0D /* BlackBgView.swift */; };
@@ -45,6 +47,8 @@
 		E2019FDC26CF15780002E93C /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		E2019FDD26CF15780002E93C /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 		E2129F5626D18EC100EED6CF /* CodableExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExt.swift; sourceTree = "<group>"; };
+		E25A02E226DFC78B00A6F4BD /* Homeworld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeworld.swift; sourceTree = "<group>"; };
+		E25A02E426DFC89A00A6F4BD /* HomeworldAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldAPI.swift; sourceTree = "<group>"; };
 		E26FFF5926D0688400D3EA2C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		E28E2EEC26CFD547006ADD0D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E28E2EEE26CFD56E006ADD0D /* BlackBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBgView.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				E26FFF5926D0688400D3EA2C /* Person.swift */,
+				E25A02E226DFC78B00A6F4BD /* Homeworld.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				E28E2EF126CFEEB7006ADD0D /* PersonAPI.swift */,
+				E25A02E426DFC89A00A6F4BD /* HomeworldAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -313,7 +319,9 @@
 			files = (
 				E2C0FFED26DC357400388179 /* FilmsVC.swift in Sources */,
 				E28E2EEF26CFD56E006ADD0D /* BlackBgView.swift in Sources */,
+				E25A02E526DFC89A00A6F4BD /* HomeworldAPI.swift in Sources */,
 				E2019FC926CF10250002E93C /* SelectPersonVC.swift in Sources */,
+				E25A02E326DFC78B00A6F4BD /* Homeworld.swift in Sources */,
 				E2019FC526CF10250002E93C /* AppDelegate.swift in Sources */,
 				E2019FC726CF10250002E93C /* SceneDelegate.swift in Sources */,
 				E2C0FFE726DC31BA00388179 /* HomeworldVC.swift in Sources */,

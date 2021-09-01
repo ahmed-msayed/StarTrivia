@@ -170,11 +170,11 @@ class PersonAPI {
                 completion(nil)
                 return
             }
-            let p = Person.self
+
             guard let data = response.data else { return completion(nil) }
             let jsonDecoder = JSONDecoder()
             do {
-                let person = try jsonDecoder.decode(p, from: data)
+                let person = try jsonDecoder.decode(Person.self, from: data)
                 completion(person)
             } catch {
                 print(error)
