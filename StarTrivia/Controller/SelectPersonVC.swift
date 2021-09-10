@@ -47,8 +47,8 @@ class SelectPersonVC: UIViewController {
         birthYearLbl.text = person.birthYear
         genderLbl.text = person.gender
         
-        homeworldBtn.isEnabled = !person.homeworld.isEmpty
-        vehiclesBtn.isEnabled = !person.vehicles.isEmpty
+        homeworldBtn.isEnabled = !person.homeworldUrl.isEmpty
+        vehiclesBtn.isEnabled = !person.vehicleUrls.isEmpty
         starshipsBtn.isEnabled = !person.starships.isEmpty
         filmsBtn.isEnabled = !person.films.isEmpty
     }

@@ -1,17 +1,16 @@
 //
-//  HomeworldAPI.swift
+//  VehiclesAPI.swift
 //  StarTrivia
 //
-//  Created by Ahmed Sayed on 01/09/2021.
+//  Created by Ahmed Sayed on 10/09/2021.
 //
 
 import Foundation
 import Alamofire
 
-class HomeworldAPI {
+class VehiclesAPI {
     
-    
-    func getHomeworld(url: String, completion: @escaping HomeworldResponseCompletion) {
+    func getVehicles(url: String, completion: @escaping VehiclesResponseCompletion) {
         
         guard let url = URL(string: url) else { return }
         
@@ -25,8 +24,8 @@ class HomeworldAPI {
             guard let data = response.data else { return completion(nil) }
             let jsonDecoder = JSONDecoder()
             do {
-                let homeworld = try jsonDecoder.decode(Homeworld.self, from: data)
-                completion(homeworld)
+                let vehicles = try jsonDecoder.decode(Vehicles.self, from: data)
+                completion(vehicles)
             } catch {
                 print(error)
                 debugPrint(error.localizedDescription)
@@ -35,5 +34,4 @@ class HomeworldAPI {
         }
         
     }
-    
 }

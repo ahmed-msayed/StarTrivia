@@ -14,9 +14,9 @@ struct Person: Codable {
     let hairColor: String
     let birthYear: String
     let gender: String
-    let homeworld: String
+    let homeworldUrl: String
     let films: [String]
-    let vehicles: [String]
+    let vehicleUrls: [String]
     let starships: [String]
     
     
@@ -27,9 +27,9 @@ struct Person: Codable {
         case hairColor = "hair_color"
         case birthYear = "birth_year"
         case gender
-        case homeworld
+        case homeworldUrl = "homeworld"
         case films
-        case vehicles
+        case vehicleUrls = "vehicles"
         case starships
     }
 }

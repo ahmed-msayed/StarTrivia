@@ -20,7 +20,8 @@ class HomeworldVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        homeworldAPI.getHomeworld(url: personPassed.homeworld) { (homeworld) in
+        //personPassed.homeworld > is a homeworld URL
+        homeworldAPI.getHomeworld(url: personPassed.homeworldUrl) { (homeworld) in
             if let homeworld = homeworld {
                 self.setupView(homeworld: homeworld)
             }
