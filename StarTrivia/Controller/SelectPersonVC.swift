@@ -49,7 +49,7 @@ class SelectPersonVC: UIViewController {
         
         homeworldBtn.isEnabled = !person.homeworldUrl.isEmpty
         vehiclesBtn.isEnabled = !person.vehicleUrls.isEmpty
-        starshipsBtn.isEnabled = !person.starships.isEmpty
+        starshipsBtn.isEnabled = !person.starshipUrls.isEmpty
         filmsBtn.isEnabled = !person.films.isEmpty
     }
     

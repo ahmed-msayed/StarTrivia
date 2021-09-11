@@ -48,7 +48,7 @@ class VehiclesVC: UIViewController {
     func setupView (vehicles: Vehicles) {
         nameLbl.text = vehicles.name
         modelLbl.text = vehicles.model
-        manLbl.text = vehicles.manufacturer
+        manLbl.text = vehicles.manufacturer.lenghtTwelve
         costLbl.text = vehicles.cost
         lengthLbl.text = vehicles.length
         speedLbl.text = vehicles.speed

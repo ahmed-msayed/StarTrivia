@@ -18,3 +18,4 @@ class Constants {
 typealias PersonResponseCompletion = (Person?) -> Void
 typealias HomeworldResponseCompletion = (Homeworld?) -> Void
 typealias VehiclesResponseCompletion = (Vehicles?) -> Void
+typealias StarshipsResponseCompletion = (Starships?) -> Void
