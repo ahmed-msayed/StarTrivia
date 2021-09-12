@@ -19,6 +19,8 @@ class SelectPersonVC: UIViewController {
     @IBOutlet weak var vehiclesBtn: UIButton!
     @IBOutlet weak var starshipsBtn: UIButton!
     @IBOutlet weak var filmsBtn: UIButton!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
     
     var personAPI = PersonAPI()
     
@@ -30,8 +32,10 @@ class SelectPersonVC: UIViewController {
     
     @IBAction func randomBtnClicked(_ sender: Any) {
         let randomId = Int.random(in: 1 ... 82)
+        spinner.startAnimating()
         
         personAPI.getRandomPersonAlamofire(id: randomId) { (person) in
+            self.spinner.stopAnimating()
             if let person = person {
                 self.setupView(person: person)
                 self.personToPass = person
@@ -50,7 +54,7 @@ class SelectPersonVC: UIViewController {
         homeworldBtn.isEnabled = !person.homeworldUrl.isEmpty
         vehiclesBtn.isEnabled = !person.vehicleUrls.isEmpty
         starshipsBtn.isEnabled = !person.starshipUrls.isEmpty
-        filmsBtn.isEnabled = !person.films.isEmpty
+        filmsBtn.isEnabled = !person.filmUrls.isEmpty
     }
     
     

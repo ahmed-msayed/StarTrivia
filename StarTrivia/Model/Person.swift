@@ -15,7 +15,7 @@ struct Person: Codable {
     let birthYear: String
     let gender: String
     let homeworldUrl: String
-    let films: [String]
+    let filmUrls: [String]
     let vehicleUrls: [String]
     let starshipUrls: [String]
     
@@ -28,7 +28,7 @@ struct Person: Codable {
         case birthYear = "birth_year"
         case gender
         case homeworldUrl = "homeworld"
-        case films
+        case filmUrls = "films"
         case vehicleUrls = "vehicles"
         case starshipUrls = "starships"
     }
